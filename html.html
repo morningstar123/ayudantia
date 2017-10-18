@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+<body>
+      <button onclick="ejecutarAjax()">mostrar</button>
+       <br>
+       <div id="resultado"></div>
+       <script src="js/jquery-3.2.1.min.js"></script>
+       <script >
+       function ejecutarAjax(){
+       		$.ajax({
+       			url: 'procesar.php',
+       			method:"GET",
+       			data: {param1: 'value1',param2:'upla'}
+       			beforesend:function(){},
+       			
+
+
+
+       			
+       		};
+    </script>
+ </body>
+ </html>
